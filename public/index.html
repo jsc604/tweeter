@@ -21,6 +21,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <!-- Bungee font -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -55,8 +56,8 @@
         <form action="/tweets/" method="POST">
           <div id="tweet-line">
           <label for="tweet-text"><strong>What are you humming about?</strong></label>
-          <textarea name="text" id="tweet-text"></textarea>
-        </div>
+          <textarea name="text" id="tweet-text" onkeyup="charCount(this)"></textarea>
+          </div>
           <div id="tweet-bottom">
             <button type="submit" id="tweet-button">Tweet</button>
             <output name="counter" class="counter" for="tweet-text" id="tweet-counter">140</output>

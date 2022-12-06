@@ -12,8 +12,8 @@
 
 #tweet-line {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
   border-bottom: solid 5px black;
   padding: 0 0 10px 0;
 }
@@ -25,5 +25,6 @@
 }
 
 #tweet-text {
-  width: 70%;
+  width: 100%;
 }
+
