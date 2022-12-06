@@ -1,0 +1,29 @@
+#tweet-button, #tweet-counter {
+  font-family: Bungee;
+}
+.new-tweet {
+  width: 100%;
+}
+
+#tweet-button {
+  background-color: #4056A1;
+  color: #ffffff;
+}
+
+#tweet-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 5px black;
+  padding: 0 0 10px 0;
+}
+
+#tweet-bottom {
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tweet-text {
+  width: 70%;
+}

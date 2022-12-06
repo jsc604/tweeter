@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Source Sans Pro, sans-serif;
+  height: 120px;
+  width: 100vw;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0 1.5em;
+  position: fixed;
+}
+
+#brand {
+  font-family: Bungee;
+  font-size: 1.8em;
+  padding-top: 0.4em;
+}
+
+#nav-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-solid {
+  color: red;
+}
+
+#nav-right-top {
+  margin-block-end: 0em;
+}
