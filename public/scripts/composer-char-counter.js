@@ -1,14 +1,11 @@
 $(document).ready(function() {
-  // --- our code goes here ---
-  console.log('hello');
+  $('textarea').keyup(function(){
+    let length = $(this).val().length;
+    if (length > 140) {
+      $('.counter').attr('id', 'over');
+    } else {
+      $('.counter').attr('id', 'under');
+    }
+    $('.counter').text(140 - length);
+  });
 });
-
-function charCount(textinput) {
-  let length = textinput.value.length;
-  if (length > 140) {
-    $('#tweet-counter').css('color', 'red');
-  } else {
-    $('#tweet-counter').css('color', '#545149')
-  }
-  $('#tweet-counter').text(140 - length);
-};

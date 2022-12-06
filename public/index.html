@@ -47,7 +47,7 @@
       <div>
           <h2>Your Name</h2>
       </div>
-  </header>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
@@ -56,11 +56,11 @@
         <form action="/tweets/" method="POST">
           <div id="tweet-line">
           <label for="tweet-text"><strong>What are you humming about?</strong></label>
-          <textarea name="text" id="tweet-text" onkeyup="charCount(this)"></textarea>
+          <textarea name="text" id="tweet-text"></textarea>
           </div>
           <div id="tweet-bottom">
             <button type="submit" id="tweet-button">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text" id="tweet-counter">140</output>
+            <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
