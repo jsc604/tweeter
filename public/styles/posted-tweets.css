@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 100%;
   margin: 2em 0px 1em 0px;
-  border: 5px solid black;
+  border: 4px solid black;
   padding: 1em;
 }
 
@@ -12,7 +12,6 @@
   display: flex;
   justify-content:  space-between;
   align-items: center;
-  flex-direction: row;
 }
 
 .posted-tweets footer {
@@ -25,7 +24,7 @@
 }
 
 .posted-tweets article {
-  border-bottom: 5px solid black;
+  border-bottom: 4px solid black;
 }
 
 footer .fa-solid {
@@ -37,4 +36,13 @@ footer .fa-solid:hover {
 }
 .posted-tweets:hover {
   box-shadow: 5px 5px 0px 0px #99abe8;
+}
+
+.posted-tweet-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.posted-tweet-name {
+  padding-left: 0.5em;
 }
