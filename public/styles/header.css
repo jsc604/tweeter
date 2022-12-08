@@ -4,6 +4,7 @@ header#top {
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
+  font-size: 1.5rem;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   background-color: orange;
   color: #ffffff;

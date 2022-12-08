@@ -3,6 +3,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   font-family: Source Sans Pro, sans-serif;
+  font-size: 1.5rem;
   height: 120px;
   width: 100vw;
   background-color: #4056A1;
@@ -13,7 +14,7 @@ nav {
 
 #brand {
   font-family: Bungee;
-  font-size: 1.8em;
+  font-size: 2.7rem;
   padding-top: 0.4em;
 }
 
