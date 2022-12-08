@@ -57,7 +57,20 @@
     <main class="container">
 
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <div id="error-msg1">
+          <p>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            &nbsp;Your tweet is too long! Please keep it simple.&nbsp;
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </p>
+        </div>
+        <div id="error-msg2">
+          <p>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            &nbsp;Your tweet is empty.&nbsp;
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </p>
+        </div>
         <form action="/tweets/" method="POST">
           <div id="tweet-line">
           <label for="tweet-text"><strong>What are you humming about?</strong></label>

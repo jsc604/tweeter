@@ -31,12 +31,12 @@ const createTweetElement = function(tweet) {
 </header>
 
 <article>
-  <p class="content">${escape(content)}</p>
+  <p>${escape(content)}</p>
 </article>
 
 <footer>
   <div>
-    <p class="timeStamp">${escape(timeFormat)}</p>
+    <p>${escape(timeFormat)}</p>
   </div>
   <div>
     <i class="fa-solid fa-flag"></i>
@@ -76,10 +76,12 @@ $(document).ready(function() {
     let length = $('textarea').val().length;
 
     if (length > 140) {
-      alert('Your tweet is too long');
+      $('#error-msg1').css('display', 'flex');
     } else if (length <= 0) {
-      alert('Your tweet is empty');
+      $('#error-msg2').css('display', 'flex');
     } else {
+      $('#error-msg1').css('display', 'none');
+      $('#error-msg2').css('display', 'none');
       $.ajax({
         method: 'POST',
         url: '/tweets/',

@@ -50,3 +50,7 @@ footer .fa-solid:hover {
 .posted-tweets {
   width: 100%;
 }
+
+article {
+  overflow-wrap: break-word;
+}

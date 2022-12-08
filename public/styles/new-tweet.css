@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: flex-start;
   border-bottom: solid 4px black;
-  padding: 0 0 10px 0;
+  padding: 1em 0 10px 0;
 }
 
 #tweet-bottom {
@@ -32,4 +32,32 @@
 
 #under {
   color: #545149;
+}
+
+#error-msg1 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin:  1em auto;
+  border: 5px solid red;
+  width: 70%;
+  color: red;
+}
+
+#error-msg2 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin:  1em auto;
+  border: 5px solid red;
+  width: 70%;
+  color: red;
+}
+
+#error-msg1 .fa-solid {
+  color: red;
+}
+
+#error-msg2 .fa-solid {
+  color: red;
 }
