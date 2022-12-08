@@ -75,8 +75,10 @@ $(document).ready(function() {
     let length = $('textarea').val().length;
 
     if (length > 140) {
+      $('#error-msg2').css('display', 'none');
       $('#error-msg1').css('display', 'flex');
     } else if (length <= 0) {
+      $('#error-msg1').css('display', 'none');
       $('#error-msg2').css('display', 'flex');
     } else {
       $('#error-msg1').css('display', 'none');
