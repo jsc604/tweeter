@@ -1,4 +1,4 @@
-.posted-tweets {
+.single-tweet {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -8,13 +8,13 @@
   padding: 1em;
 }
 
-.posted-tweets header {
+.single-tweet header {
   display: flex;
   justify-content:  space-between;
   align-items: center;
 }
 
-.posted-tweets footer {
+.single-tweet footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +23,7 @@
   font-size: smaller;
 }
 
-.posted-tweets article {
+.single-tweet article {
   border-bottom: 4px solid black;
 }
 
@@ -34,7 +34,7 @@ footer .fa-solid {
 footer .fa-solid:hover {
   color: orange;
 }
-.posted-tweets:hover {
+.single-tweet:hover {
   box-shadow: 5px 5px 0px 0px #99abe8;
 }
 
@@ -45,4 +45,8 @@ footer .fa-solid:hover {
 
 .posted-tweet-name {
   padding-left: 0.5em;
+}
+
+.posted-tweets {
+  width: 100%;
 }
