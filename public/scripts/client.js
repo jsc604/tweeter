@@ -22,7 +22,7 @@ const createTweetElement = function(tweet) {
 <div class="single-tweet">
 <header>
   <div class="posted-tweet-avatar">
-    <img src=${escape(avatar)} id="posted-avatar">
+    <img src=${escape(avatar)}>
     <div class="posted-tweet-name">${name}</div>
   </div>
   <div class="handle">
@@ -60,16 +60,35 @@ const renderTweets = function(tweets) {
 
 $(document).ready(function() {
 
+  // ----- mouse over animation -----
+  $('#nav-right').mouseenter(
+    function() {
+      $('nav .fa-solid').css('animation', 'bounce 2s ease infinite');
+    }
+  );
+  $('#nav-right').mouseleave(
+    function() {
+      $('nav .fa-solid').css('animation', 'none');
+    }
+  );
+
+  // ----- form toggle -----
+  $('#nav-right').click(function() {
+    $('.new-tweet').css('display', 'block');
+    $('#nav-right').click(function() {
+      $('.new-tweet').toggle();
+    });
+  });
+  // ----- load tweets -----
   const loadTweets = function() {
     $.ajax('/tweets/', { method: 'GET'})
       .then((data) => {
         renderTweets(data);
       });
   };
-
   loadTweets();
   
-
+  // ----- tweet submission -----
   $('form').on('submit', function(event) {
     event.preventDefault();
     let data = $(this).serialize();

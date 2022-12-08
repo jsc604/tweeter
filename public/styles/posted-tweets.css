@@ -54,3 +54,7 @@ footer .fa-solid:hover {
 article {
   overflow-wrap: break-word;
 }
+
+.handle {
+  color: #4056A1;
+}
