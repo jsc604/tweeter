@@ -12,25 +12,31 @@ const createTweetElement = function(tweet) {
   let timeStamp = tweet.created_at;
   let timeFormat = timeago.format(timeStamp);
 
+  const escape = function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   let $tweet = $(`
 <div class="single-tweet">
 <header>
   <div class="posted-tweet-avatar">
-    <img src=${avatar} id="posted-avatar">
+    <img src=${escape(avatar)} id="posted-avatar">
     <div class="posted-tweet-name">${name}</div>
   </div>
   <div class="handle">
-    ${handle}
+    ${escape(handle)}
   </div>
 </header>
 
 <article>
-  <p class="content">${content}</p>
+  <p class="content">${escape(content)}</p>
 </article>
 
 <footer>
   <div>
-    <p class="timeStamp">${timeFormat}</p>
+    <p class="timeStamp">${escape(timeFormat)}</p>
   </div>
   <div>
     <i class="fa-solid fa-flag"></i>
@@ -45,21 +51,20 @@ const createTweetElement = function(tweet) {
 };
 
 const renderTweets = function(tweets) {
+  $('.posted-tweets').empty();
   for (let data of tweets) {
     const $tweet = createTweetElement(data);
-    $('.posted-tweets').append($tweet);
+    $('.posted-tweets').prepend($tweet);
   }
 };
 
 $(document).ready(function() {
 
   const loadTweets = function() {
-    const $tweets = $.ajax('/tweets/', { method: 'GET'})
+    $.ajax('/tweets/', { method: 'GET'})
       .then((data) => {
-        renderTweets(data.reverse());
+        renderTweets(data);
       });
-
-    return $tweets;
   };
 
   loadTweets();
@@ -81,11 +86,9 @@ $(document).ready(function() {
         data: data,
       })
         .then(() => {
-          $('.posted-tweets').empty();
-          $.ajax('/tweets/', { method: 'GET'})
-            .then((data) => {
-              renderTweets(data.reverse());
-            });
+          loadTweets();
+          $('textarea').val('');
+          $('.counter').text(140);
         });
     }
   });

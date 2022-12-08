@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('textarea').keyup(function(){
+  $('textarea').keyup(function() {
     let length = $(this).val().length;
     if (length > 140) {
       $('.counter').attr('id', 'over');
