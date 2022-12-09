@@ -8,7 +8,7 @@ This app is fully responsive and supports a variety of devices like mobile phone
 
 Special features include hover and toggle animations, tweetbox character counter that changes color when over character limit, over limit character count error, empty tweetbox error. 
 
-!["Mobile-view with tweet box"](https://github.com/jsc604/tweeter/blob/master/docs/Mobile-views.png?raw=true)
+!["Mobile-view with tweet box"](https://github.com/jsc604/tweeter/blob/master/docs/Mobile-view.png?raw=true)
 
 !["Mobile-view with tweetbox and error message"](https://github.com/jsc604/tweeter/blob/master/docs/mobile-view%20with%20error%20message.png?raw=true)
 
