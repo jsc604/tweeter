@@ -8,6 +8,19 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   background-color: orange;
   color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #top {
+    height: 250px;
+  }
+
+  #avatar {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -18,12 +31,4 @@
     width: 30%;
     height: 400px;
   }
-/*
-  #profile-container {
-    padding: 0rem 4rem;
-  }
-
-  #avatar {
-    padding-top: 2rem;
-  } */
 }

@@ -45,6 +45,22 @@ nav .fa-solid {
   60% {transform: translateY(-15px);}
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  #brand {
+    font-size: 2.2rem;
+  }
+
+  #nav-right {
+    font-size: 1.3rem;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   nav {
     background-color: #4056A1;
