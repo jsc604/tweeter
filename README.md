@@ -1,12 +1,15 @@
 # Tweeter Project
+Tweeter is a lightweight Twitter clone designed with simplicity in mind. 
 
-Tweeter is a simple, single-page AJAX based Twitter clone that uses jQuery, HTML5 and CSS3. 
+Using AJAX, jquery, HTML5, and CSS3, Tweeter allows users to post updates.
 
-It uses jQuery library's AJAX functionality to fetch new tweets and posts them in real time without the need to refresh the page.
+The site features a clean and modern design, with a mobile-friendly interface that ensures Tweeter is accessible from any device. 
 
-This app is fully responsive and supports a variety of devices like mobile phones, tablets and desktop browsers.
+Tweeter also uses AJAX, jquery, and HTML5 for a seamless and interactive experience, with no page refreshes required. 
 
-Special features include hover and toggle animations, tweetbox character counter that changes color when over character limit, over limit character count error, empty tweetbox error. 
+CSS3 is used to provide a modern look and feel, with a responsive layout and intuitive navigation. 
+
+Special features include hover and toggle animations, tweetbox character counter that changes color when over character limit, over limit character count error, and empty tweetbox error. 
 
 !["Mobile-view with tweet box"](https://github.com/jsc604/tweeter/blob/master/docs/Mobile-view.png?raw=true)
 
