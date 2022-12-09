@@ -14,6 +14,7 @@ $(document).ready(function() {
   // ----- form toggle -----
   $('#nav-right').click(function() {
     $('.new-tweet').css('display', 'block');
+    window.location.href = '#';
     $('#nav-right').click(function() {
       $('.new-tweet').toggle();
     });
