@@ -59,3 +59,11 @@ article {
 .handle {
   color: #4056A1;
 }
+
+@media only screen and (min-width: 1024px) {
+
+  .single-tweet {
+    margin-top: 0px;
+  }
+
+}

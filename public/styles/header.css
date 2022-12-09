@@ -1,4 +1,4 @@
-header#top {
+#top {
   height: 520px;
   display: flex;
   align-items: center;
@@ -8,4 +8,22 @@ header#top {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   background-color: orange;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  #top {
+    margin: auto;
+    margin-top: 11rem;
+    text-align: center;
+    width: 30%;
+    height: 400px;
+  }
+/*
+  #profile-container {
+    padding: 0rem 4rem;
+  }
+
+  #avatar {
+    padding-top: 2rem;
+  } */
 }

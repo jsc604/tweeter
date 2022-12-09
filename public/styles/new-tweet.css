@@ -63,3 +63,18 @@
 #error-msg2 .fa-solid {
   color: red;
 }
+
+@media only screen and (min-width: 1024px) {
+  #error-msg1 {
+    width: 90%;
+    text-align: center;
+  }
+
+  #tweet-bottom {
+    padding-bottom: 2rem;
+  }
+
+  #tweet-line {
+    padding-top: 0px;
+  }
+}

@@ -6,7 +6,8 @@ nav {
   font-size: 1.5rem;
   height: 120px;
   width: 100vw;
-  background-color: #4056A1;
+  background-color: orange;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   color: #FFFFFF;
   padding: 0 1.5em;
   position: fixed;
@@ -33,7 +34,7 @@ nav {
 }
 
 nav .fa-solid {
-  color: orange;
+  color: orangered;
   width: 100%;
   text-align: center;
   animation: none;
@@ -42,4 +43,15 @@ nav .fa-solid {
   0%, 20%, 50%, 80%, 100% {transform: translate(0);}
   40% {transform: translateY(-15px);}
   60% {transform: translateY(-15px);}
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+    background-image: none;
+  }
+
+  nav .fa-solid {
+    color: orange;
+  }
 }
