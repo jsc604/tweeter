@@ -67,6 +67,7 @@ article {
   .single-tweet header {
     flex-direction: column;
     overflow-wrap: break-word;
+    align-items: flex-start;
   }
 
   .posted-tweet-avatar img {

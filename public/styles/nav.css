@@ -45,11 +45,15 @@ nav .fa-solid {
   60% {transform: translateY(-15px);}
 }
 
+#mobile-arrow {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   nav {
     justify-content: center;
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 0rem;
   }
 
   #brand {
@@ -58,6 +62,18 @@ nav .fa-solid {
 
   #nav-right {
     font-size: 1.3rem;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+  }
+
+  #mobile-arrow {
+    display: block;
+  } 
+
+  #nav-right-top {
+    width: 100%;
+    margin: 0px;
   }
 }
 
